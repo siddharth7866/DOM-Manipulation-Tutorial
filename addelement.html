@@ -11,18 +11,20 @@
 </body>
 <script>
   function createEl(text) {
-    const div=document.createElement('h2')
-   console.log(div)
-   div.style.backgroundColor="green"
-   div.style.padding="10px";
-   const textnode=document.createTextNode(text)
-   div.appendChild(textnode)
-   document.body.appendChild(div)
+    const h1=document.createElement('h1')
+    h1.style.backgroundColor="green";
+    h1.style.padding="10px"
+    const textnode=document.createTextNode(text)
+    h1.appendChild(textnode)
+    document.body.appendChild(h1)
   }
 //   createEl("Siddharth Vishen")
   const heading=document.getElementById("sid")
   console.log(heading)
 //   const sid=createEl("element created via eventssss")
-  heading.addEventListener('mouseover',()=>createEl("Through event"))
+  heading.addEventListener('mouseover',()=>createEl("Through EVENT"))
 </script>
 </html>
+
+
+
